@@ -18,7 +18,9 @@ class Result {
      */
 
     public static int makingAnagrams(String s1, String s2) {
-    // Write your code here
+    // We will make 2 different arrays of length 26( total no of charachters ) so we will go through s1 and s2 
+    //and will have a note of each char and add to the array (at their specific position between 1 to 26 ) and last we will iterate through both the arrays 
+    //and find the difference of each char and add to min.
         int min = 0;
         int a[] = new int[26];
         int b[] = new int[26];
