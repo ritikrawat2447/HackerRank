@@ -18,7 +18,10 @@ class Result {
      */
 
     public static int minimumNumber(int n, String password) {
-    // Return the minimum number of characters to make the password strong
+    // We will make a count for each case and go through the string and add 1 to the specific charachter  
+    // then we will check if the each char is greater than 1 or not ( means if its 0 than there is a short of key to make the password strong ) and we add 1 to count
+    // then we will check wheather count+length of string greater than 6 then return count ( means it already statisfy the total char criteria and return count ) 
+    // if less than 6 than we will have to return the count and the reaming char to fulfil 6 char criteria.
         int count = 0;
         int speacial = 0;
         int uppercase = 0;
